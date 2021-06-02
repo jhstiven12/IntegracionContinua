@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<bindings xmlns="http://java.sun.com/xml/ns/jaxb" if-exists="true" version="2.1">
+      
+    <!--
+
+Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.0 
+Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
+Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
+Generado el: 2020.06.16 a las 06:16:32 PM COT 
+
+  -->
+      
+    <bindings xmlns:tns="http://www.americamovil.com/schema/namespace/AccountManagement/v1" if-exists="true" scd="x-schema::tns">
+            
+        <schemaBindings map="false">
+                  
+            <package name="com.claro.identificacionusuario.gen"/>
+                
+        </schemaBindings>
+            
+        <bindings if-exists="true" scd="~tns:AssociateAccountType">
+                  
+            <class ref="AssociateAccountType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:AssociateAccountResponseType">
+                  
+            <class ref="AssociateAccountResponseType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:FaultTransactionType">
+                  
+            <class ref="FaultTransactionType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:DisassociateAccountType">
+                  
+            <class ref="DisassociateAccountType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:DisassociateAccountResponseType">
+                  
+            <class ref="DisassociateAccountResponseType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:RetrieveAccountDetailsType">
+                  
+            <class ref="RetrieveAccountDetailsType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:RetrieveAccountDetailsResponseType">
+                  
+            <class ref="RetrieveAccountDetailsResponseType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:GrantOrRevokeAccessToServiceType">
+                  
+            <class ref="GrantOrRevokeAccessToServiceType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:GrantOrRevokeAccessToServiceResponseType">
+                  
+            <class ref="GrantOrRevokeAccessToServiceResponseType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:AcceptOrRejectAccessToServiceType">
+                  
+            <class ref="AcceptOrRejectAccessToServiceType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:AcceptOrRejectAccessToServiceResponseType">
+                  
+            <class ref="AcceptOrRejectAccessToServiceResponseType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:IsAccountAlreadyRegisteredType">
+                  
+            <class ref="IsAccountAlreadyRegisteredType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:IsAccountAlreadyRegisteredResponseType">
+                  
+            <class ref="IsAccountAlreadyRegisteredResponseType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:RetrieveAssociatedAccountsType">
+                  
+            <class ref="RetrieveAssociatedAccountsType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:RetrieveAssociatedAccountsResponseType">
+                  
+            <class ref="RetrieveAssociatedAccountsResponseType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:RetrieveAccountListType">
+                  
+            <class ref="RetrieveAccountListType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:RetrieveAccountListResponseType">
+                  
+            <class ref="RetrieveAccountListResponseType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:ValidateAccountNumberType">
+                  
+            <class ref="ValidateAccountNumberType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:ValidateAccountNumberResponseType">
+                  
+            <class ref="ValidateAccountNumberResponseType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:ValidateMobileNumberType">
+                  
+            <class ref="ValidateMobileNumberType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:ValidateMobileNumberResponseType">
+                  
+            <class ref="ValidateMobileNumberResponseType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:ValidateNumberType">
+                  
+            <class ref="ValidateNumberType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:ValidateNumberResponseType">
+                  
+            <class ref="ValidateNumberResponseType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:UpdateAccountStatusType">
+                  
+            <class ref="UpdateAccountStatusType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:UpdateAccountStatusResponseType">
+                  
+            <class ref="UpdateAccountStatusResponseType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:RetrieveBalancesType">
+                  
+            <class ref="RetrieveBalancesType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:RetrieveBalancesResponseType">
+                  
+            <class ref="RetrieveBalancesResponseType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:ValidateBillNumberType">
+                  
+            <class ref="ValidateBillNumberType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:ValidateBillNumberResponseType">
+                  
+            <class ref="ValidateBillNumberResponseType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:legalizeAccountType">
+                  
+            <class ref="LegalizeAccountType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:legalizeAccountResponseType">
+                  
+            <class ref="LegalizeAccountResponseType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:reactivateAccountOrServiceType">
+                  
+            <class ref="ReactivateAccountOrServiceType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:reactivateAccountOrServiceResponseType">
+                  
+            <class ref="ReactivateAccountOrServiceResponseType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:retrieveCustomerDataType">
+                  
+            <class ref="RetrieveCustomerDataType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:retrieveCustomerDataResponseType">
+                  
+            <class ref="RetrieveCustomerDataResponseType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:retrieveLegalizationDataType">
+                  
+            <class ref="RetrieveLegalizationDataType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:retrieveLegalizationDataResponseType">
+                  
+            <class ref="RetrieveLegalizationDataResponseType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:suspendAccountOrServiceType">
+                  
+            <class ref="SuspendAccountOrServiceType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:suspendAccountOrServiceResponseType">
+                  
+            <class ref="SuspendAccountOrServiceResponseType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:updateCustomerDataType">
+                  
+            <class ref="UpdateCustomerDataType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:updateCustomerDataResponseType">
+                  
+            <class ref="UpdateCustomerDataResponseType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:validateFixedSuspensionType">
+                  
+            <class ref="ValidateFixedSuspensionType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:validateFixedSuspensionResponseType">
+                  
+            <class ref="ValidateFixedSuspensionResponseType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:suspendMobileAccountType">
+                  
+            <class ref="SuspendMobileAccountType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:suspendMobileAccountResponseType">
+                  
+            <class ref="SuspendMobileAccountResponseType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:suspendFixedAccountOrServiceType">
+                  
+            <class ref="SuspendFixedAccountOrServiceType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:suspendFixedAccountOrServiceResponseType">
+                  
+            <class ref="SuspendFixedAccountOrServiceResponseType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:reactivateMobileAccountType">
+                  
+            <class ref="ReactivateMobileAccountType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:reactivateMobileAccountResponseType">
+                  
+            <class ref="ReactivateMobileAccountResponseType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:retrieveOTADeviceType">
+                  
+            <class ref="RetrieveOTADeviceType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:retrieveOTADeviceResponseType">
+                  
+            <class ref="RetrieveOTADeviceResponseType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:retrieveAccountHistoryType">
+                  
+            <class ref="RetrieveAccountHistoryType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:retrieveAccountHistoryResponseType">
+                  
+            <class ref="RetrieveAccountHistoryResponseType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:reactivateFixedAccountOrServiceType">
+                  
+            <class ref="ReactivateFixedAccountOrServiceType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:reactivateFixedAccountOrServiceResponseType">
+                  
+            <class ref="ReactivateFixedAccountOrServiceResponseType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:UpdateAccountAssociationStatusType">
+                  
+            <class ref="UpdateAccountAssociationStatusType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:UpdateAccountAssociationStatusResponseType">
+                  
+            <class ref="UpdateAccountAssociationStatusResponseType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:ServiceRequestType">
+                  
+            <class ref="ServiceRequestType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:ServiceResponseType">
+                  
+            <class ref="ServiceResponseType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:AccountDetailsType">
+                  
+            <class ref="AccountDetailsType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:ServiceType">
+                  
+            <class ref="ServiceType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:PlanType">
+                  
+            <class ref="PlanType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:CategoriesType">
+                  
+            <class ref="CategoriesType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:CategoryDetailType">
+                  
+            <class ref="CategoryDetailType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:PlanLineType">
+                  
+            <class ref="PlanLineType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:PackageType">
+                  
+            <class ref="PackageType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:UsageLimitType">
+                  
+            <class ref="UsageLimitType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:AuthAccUsersType">
+                  
+            <class ref="AuthAccUsersType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:AccountStatusType">
+                  
+            <class ref="AccountStatusType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:StatusChangeEffectivePeriodType">
+                  
+            <class ref="StatusChangeEffectivePeriodType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:StatusChangeReasonType">
+                  
+            <class ref="StatusChangeReasonType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:StatusChangeEventType">
+                  
+            <class ref="StatusChangeEventType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:AccountListType">
+                  
+            <class ref="AccountListType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:AssociatedAccountListType">
+                  
+            <class ref="AssociatedAccountListType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:FrequentNumbersAllowedType">
+                  
+            <class ref="FrequentNumbersAllowedType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:PersonalIdType">
+                  
+            <class ref="PersonalIdType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:SocialNetworkType">
+                  
+            <class ref="SocialNetworkType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:ImagesType">
+                  
+            <class ref="ImagesType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:SuspensionEventTypt">
+                  
+            <class ref="SuspensionEventTypt"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:SuspensionOrderType">
+                  
+            <class ref="SuspensionOrderType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:CustomerDataType">
+                  
+            <class ref="CustomerDataType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:CustomerAddressType">
+                  
+            <class ref="CustomerAddressType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:SuspensionEventType">
+                  
+            <class ref="SuspensionEventType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:DeviceType">
+                  
+            <class ref="DeviceType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:PeriodType">
+                  
+            <class ref="PeriodType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:AccountHistoryType">
+                  
+            <class ref="AccountHistoryType"/>
+                
+        </bindings>
+          
+    </bindings>
+    
+</bindings>

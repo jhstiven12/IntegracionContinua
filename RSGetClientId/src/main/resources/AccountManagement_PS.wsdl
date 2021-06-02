@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WL5G3N0:definitions name="AccountManagement" targetNamespace="http://www.americamovil.com/service/namespace/AccountManagement/v1" xmlns:WL5G3N0="http://schemas.xmlsoap.org/wsdl/" xmlns:WL5G3N1="http://www.americamovil.com/schema/namespace/AccountManagement/v1" xmlns:WL5G3N2="http://www.americamovil.com/service/namespace/AccountManagement/v1" xmlns:WL5G3N3="http://schemas.xmlsoap.org/wsdl/soap/">
+  <WL5G3N0:documentation>
+		
+			
+				
+			
+		
+	</WL5G3N0:documentation>
+  <WL5G3N0:types>
+    <xsd:schema xmlns:ns1="http://www.americamovil.com/schema/namespace/AccountManagement/v1" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://www.americamovil.com/service/namespace/AccountManagement/v1" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:import namespace="http://www.americamovil.com/schema/namespace/AccountManagement/v1" schemaLocation="http://172.24.160.135:8080/SelfServiceMobile_Project/Services/Proxy_Pipelines/AccountManagement_PS?SCHEMA%2FSelfService_Project%2FInterfaces%2FXSD%2FAccountManagement">
+</xsd:import>
+    </xsd:schema>
+    <xsd:schema targetNamespace="http://www.nrf-arts.org/IXRetail/namespace/" xmlns:ns1="http://www.americamovil.com/schema/namespace/AccountManagement/v1" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://www.americamovil.com/service/namespace/AccountManagement/v1" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+    <xsd:schema targetNamespace="http://www.americamovil.com/service/namespace/AccountManagement/v1" xmlns:ns1="http://www.americamovil.com/schema/namespace/AccountManagement/v1" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://www.americamovil.com/service/namespace/AccountManagement/v1" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+</xsd:schema>
+  </WL5G3N0:types>
+  <WL5G3N0:message name="associateAccountRequest">
+    <WL5G3N0:part element="WL5G3N1:associateAccount" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="associateAccountResponse">
+    <WL5G3N0:part element="WL5G3N1:associateAccountResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="associateAccountFault">
+    <WL5G3N0:part element="WL5G3N1:associateAccountFault" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="disassociateAccountRequest">
+    <WL5G3N0:part element="WL5G3N1:disassociateAccount" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="disassociateAccountResponse">
+    <WL5G3N0:part element="WL5G3N1:disassociateAccountResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="disassociateAccountFault">
+    <WL5G3N0:part element="WL5G3N1:disassociateAccountFault" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="retrieveAccountDetailsRequest">
+    <WL5G3N0:part element="WL5G3N1:retrieveAccountDetails" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="retrieveAccountDetailsResponse">
+    <WL5G3N0:part element="WL5G3N1:retrieveAccountDetailsResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="retrieveAccountDetailsFault">
+    <WL5G3N0:part element="WL5G3N1:retrieveAccountDetailsFault" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="GrantOrRevokeAccessToServiceRequest">
+    <WL5G3N0:part element="WL5G3N1:grantOrRevokeAccessToService" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="GrantOrRevokeAccessToServiceResponse">
+    <WL5G3N0:part element="WL5G3N1:grantOrRevokeAccessToServiceResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="GrantOrRevokeAccessToServiceFault">
+    <WL5G3N0:part element="WL5G3N1:grantOrRevokeAccessToServiceFault" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="AcceptOrRejectAccessToServiceRequest">
+    <WL5G3N0:part element="WL5G3N1:acceptOrRejectAccessToService" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="AcceptOrRejectAccessToServiceResponse">
+    <WL5G3N0:part element="WL5G3N1:acceptOrRejectAccessToServiceResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="AcceptOrRejectAccessToServiceFault">
+    <WL5G3N0:part element="WL5G3N1:acceptOrRejectAccessToServiceFault" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="IsAccountAlreadyRegisteredRequest">
+    <WL5G3N0:part element="WL5G3N1:isAccountAlreadyRegistered" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="IsAccountAlreadyRegisteredResponse">
+    <WL5G3N0:part element="WL5G3N1:isAccountAlreadyRegisteredResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="IsAccountAlreadyRegisteredFault">
+    <WL5G3N0:part element="WL5G3N1:isAccountAlreadyRegisteredFault" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="retrieveAssociatedAccountsRequest">
+    <WL5G3N0:part element="WL5G3N1:retrieveAssociatedAccounts" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="retrieveAssociatedAccountsResponse">
+    <WL5G3N0:part element="WL5G3N1:retrieveAssociatedAccountsResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="retrieveAssociatedAccountsFault">
+    <WL5G3N0:part element="WL5G3N1:retrieveAssociatedAccountsFault" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="retrieveAccountListRequest">
+    <WL5G3N0:part element="WL5G3N1:retrieveAccountList" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="retrieveAccountListResponse">
+    <WL5G3N0:part element="WL5G3N1:retrieveAccountListResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="retrieveAccountListFault">
+    <WL5G3N0:part element="WL5G3N1:retrieveAccountListFault" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="validateAccountNumberRequest">
+    <WL5G3N0:part element="WL5G3N1:validateAccountNumber" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="validateAccountNumberResponse">
+    <WL5G3N0:part element="WL5G3N1:validateAccountNumberResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="validateAccountNumberFault">
+    <WL5G3N0:part element="WL5G3N1:validateAccountNumberFault" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="validateMobileNumberRequest">
+    <WL5G3N0:part element="WL5G3N1:validateMobileNumber" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="validateMobileNumberResponse">
+    <WL5G3N0:part element="WL5G3N1:validateMobileNumberResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="validateMobileNumberFault">
+    <WL5G3N0:part element="WL5G3N1:validateMobileNumberFault" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="validateNumberRequest">
+    <WL5G3N0:part element="WL5G3N1:validateNumber" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="validateNumberResponse">
+    <WL5G3N0:part element="WL5G3N1:validateNumberResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="validateNumberFault">
+    <WL5G3N0:part element="WL5G3N1:validateNumberFault" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="updateAccountStatusRequest">
+    <WL5G3N0:part element="WL5G3N1:updateAccountStatus" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="updateAccountStatusResponse">
+    <WL5G3N0:part element="WL5G3N1:updateAccountStatusResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="updateAccountStatusFault">
+    <WL5G3N0:part element="WL5G3N1:updateAccountStatusFault" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="updateAccountAssociationStatusRequest">
+    <WL5G3N0:part element="WL5G3N1:updateAccountAssociationStatus" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="updateAccountAssociationStatusResponse">
+    <WL5G3N0:part element="WL5G3N1:updateAccountAssociationStatusResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="UpdateAccountAssociationStatusFault">
+    <WL5G3N0:part element="WL5G3N1:updateAccountStatusFault" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="retrieveBalancesRequest">
+    <WL5G3N0:part element="WL5G3N1:retrieveBalances" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="retrieveBalancesResponse">
+    <WL5G3N0:part element="WL5G3N1:retrieveBalancesResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="retrieveBalancesFault">
+    <WL5G3N0:part element="WL5G3N1:retrieveBalancesFault" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="validateBillNumberRequest">
+    <WL5G3N0:part element="WL5G3N1:validateBillNumber" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="validateBillNumberResponse">
+    <WL5G3N0:part element="WL5G3N1:validateBillNumberResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="validateBillNumberFault">
+    <WL5G3N0:part element="WL5G3N1:validateBillNumberFault" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="legalizeAccountRequest">
+    <WL5G3N0:part element="WL5G3N1:legalizeAccount" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="legalizeAccountResponse">
+    <WL5G3N0:part element="WL5G3N1:legalizeAccountResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="legalizeAccountFault">
+    <WL5G3N0:part element="WL5G3N1:legalizeAccountFault" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="retrieveCustomerDataRequest">
+    <WL5G3N0:part element="WL5G3N1:retrieveCustomerData" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="retrieveCustomerDataResponse">
+    <WL5G3N0:part element="WL5G3N1:retrieveCustomerDataResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="retrieveCustomerDataFault">
+    <WL5G3N0:part element="WL5G3N1:retrieveCustomerDataFault" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="retrieveLegalizationDataRequest">
+    <WL5G3N0:part element="WL5G3N1:retrieveLegalizationData" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="retrieveLegalizationDataResponse">
+    <WL5G3N0:part element="WL5G3N1:retrieveLegalizationDataResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="retrieveLegalizationDataFault">
+    <WL5G3N0:part element="WL5G3N1:retrieveLegalizationDataFault" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="updateCustomerDataRequest">
+    <WL5G3N0:part element="WL5G3N1:updateCustomerData" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="updateCustomerDataResponse">
+    <WL5G3N0:part element="WL5G3N1:updateCustomerDataResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="updateCustomerDataFault">
+    <WL5G3N0:part element="WL5G3N1:updateCustomerDataFault" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="validateFixedSuspensionRequest">
+    <WL5G3N0:part element="WL5G3N1:validateFixedSuspension" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="validateFixedSuspensionResponse">
+    <WL5G3N0:part element="WL5G3N1:validateFixedSuspensionResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="validateFixedSuspensionFault">
+    <WL5G3N0:part element="WL5G3N1:validateFixedSuspensionFault" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="suspendMobileAccountRequest">
+    <WL5G3N0:part element="WL5G3N1:suspendMobileAccount" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="suspendMobileAccountResponse">
+    <WL5G3N0:part element="WL5G3N1:suspendMobileAccountResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="suspendMobileAccountFault">
+    <WL5G3N0:part element="WL5G3N1:suspendMobileAccountFault" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="suspendFixedAccountOrServiceRequest">
+    <WL5G3N0:part element="WL5G3N1:suspendFixedAccountOrService" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="suspendFixedAccountOrServiceResponse">
+    <WL5G3N0:part element="WL5G3N1:suspendFixedAccountOrServiceResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="suspendFixedAccountOrServiceFault">
+    <WL5G3N0:part element="WL5G3N1:suspendFixedAccountOrServiceFault" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="reactivateMobileAccountRequest">
+    <WL5G3N0:part element="WL5G3N1:reactivateMobileAccount" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="reactivateMobileAccountResponse">
+    <WL5G3N0:part element="WL5G3N1:reactivateMobileAccountResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="reactivateMobileAccountFault">
+    <WL5G3N0:part element="WL5G3N1:reactivateMobileAccountFault" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="retrieveOTADeviceRequest">
+    <WL5G3N0:part element="WL5G3N1:retrieveOTADevice" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="retrieveOTADeviceResponse">
+    <WL5G3N0:part element="WL5G3N1:retrieveOTADeviceResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="retrieveOTADeviceFault">
+    <WL5G3N0:part element="WL5G3N1:retrieveOTADeviceFault" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="retrieveAccountHistoryRequest">
+    <WL5G3N0:part element="WL5G3N1:retrieveAccountHistory" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="retrieveAccountHistoryResponse">
+    <WL5G3N0:part element="WL5G3N1:retrieveAccountHistoryResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="retrieveAccountHistoryFault">
+    <WL5G3N0:part element="WL5G3N1:retrieveAccountHistoryFault" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="reactivateFixedAccountOrServiceRequest">
+    <WL5G3N0:part element="WL5G3N1:reactivateFixedAccountOrService" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="reactivateFixedAccountOrServiceResponse">
+    <WL5G3N0:part element="WL5G3N1:reactivateFixedAccountOrServiceResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="reactivateFixedAccountOrServiceFault">
+    <WL5G3N0:part element="WL5G3N1:reactivateFixedAccountOrServiceFault" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:portType name="AccountManagement">
+    <WL5G3N0:operation name="associateAccount">
+      <WL5G3N0:input message="WL5G3N2:associateAccountRequest"/>
+      <WL5G3N0:output message="WL5G3N2:associateAccountResponse"/>
+      <WL5G3N0:fault message="WL5G3N2:associateAccountFault" name="Fault"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="updateAccountAssociationStatus">
+      <WL5G3N0:input message="WL5G3N2:updateAccountAssociationStatusRequest"/>
+      <WL5G3N0:output message="WL5G3N2:updateAccountAssociationStatusResponse"/>
+      <WL5G3N0:fault message="WL5G3N2:updateAccountStatusFault" name="Fault"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="disassociateAccount">
+      <WL5G3N0:input message="WL5G3N2:disassociateAccountRequest"/>
+      <WL5G3N0:output message="WL5G3N2:disassociateAccountResponse"/>
+      <WL5G3N0:fault message="WL5G3N2:disassociateAccountFault" name="Fault"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="retrieveAccountDetails">
+      <WL5G3N0:input message="WL5G3N2:retrieveAccountDetailsRequest"/>
+      <WL5G3N0:output message="WL5G3N2:retrieveAccountDetailsResponse"/>
+      <WL5G3N0:fault message="WL5G3N2:retrieveAccountDetailsFault" name="Fault"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="retrieveAccountList">
+      <WL5G3N0:input message="WL5G3N2:retrieveAccountListRequest"/>
+      <WL5G3N0:output message="WL5G3N2:retrieveAccountListResponse"/>
+      <WL5G3N0:fault message="WL5G3N2:retrieveAccountListFault" name="Fault"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="retrieveAssociatedAccounts">
+      <WL5G3N0:input message="WL5G3N2:retrieveAssociatedAccountsRequest"/>
+      <WL5G3N0:output message="WL5G3N2:retrieveAssociatedAccountsResponse"/>
+      <WL5G3N0:fault message="WL5G3N2:retrieveAssociatedAccountsFault" name="Fault"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="validateNumber">
+      <WL5G3N0:input message="WL5G3N2:validateNumberRequest"/>
+      <WL5G3N0:output message="WL5G3N2:validateNumberResponse"/>
+      <WL5G3N0:fault message="WL5G3N2:validateNumberFault" name="Fault"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="validateMobileNumber">
+      <WL5G3N0:input message="WL5G3N2:validateMobileNumberRequest"/>
+      <WL5G3N0:output message="WL5G3N2:validateMobileNumberResponse"/>
+      <WL5G3N0:fault message="WL5G3N2:validateMobileNumberFault" name="Fault"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="validateAccountNumber">
+      <WL5G3N0:input message="WL5G3N2:validateAccountNumberRequest"/>
+      <WL5G3N0:output message="WL5G3N2:validateAccountNumberResponse"/>
+      <WL5G3N0:fault message="WL5G3N2:validateAccountNumberFault" name="Fault"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="retrieveBalances">
+      <WL5G3N0:input message="WL5G3N2:retrieveBalancesRequest"/>
+      <WL5G3N0:output message="WL5G3N2:retrieveBalancesResponse"/>
+      <WL5G3N0:fault message="WL5G3N2:retrieveBalancesFault" name="Fault"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="updateAccountStatus">
+      <WL5G3N0:input message="WL5G3N2:updateAccountStatusRequest"/>
+      <WL5G3N0:output message="WL5G3N2:updateAccountStatusResponse"/>
+      <WL5G3N0:fault message="WL5G3N2:updateAccountStatusFault" name="Fault"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="validateBillNumber">
+      <WL5G3N0:input message="WL5G3N2:validateBillNumberRequest"/>
+      <WL5G3N0:output message="WL5G3N2:validateBillNumberResponse"/>
+      <WL5G3N0:fault message="WL5G3N2:validateBillNumberFault" name="Fault"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="suspendMobileAccount">
+      <WL5G3N0:input message="WL5G3N2:suspendMobileAccountRequest"/>
+      <WL5G3N0:output message="WL5G3N2:suspendMobileAccountResponse"/>
+      <WL5G3N0:fault message="WL5G3N2:suspendMobileAccountFault" name="Fault"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="suspendFixedAccountOrService">
+      <WL5G3N0:input message="WL5G3N2:suspendFixedAccountOrServiceRequest"/>
+      <WL5G3N0:output message="WL5G3N2:suspendFixedAccountOrServiceResponse"/>
+      <WL5G3N0:fault message="WL5G3N2:suspendFixedAccountOrServiceFault" name="Fault"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="validateFixedSuspension">
+      <WL5G3N0:input message="WL5G3N2:validateFixedSuspensionRequest"/>
+      <WL5G3N0:output message="WL5G3N2:validateFixedSuspensionResponse"/>
+      <WL5G3N0:fault message="WL5G3N2:validateFixedSuspensionFault" name="Fault"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="reactivateMobileAccount">
+      <WL5G3N0:input message="WL5G3N2:reactivateMobileAccountRequest"/>
+      <WL5G3N0:output message="WL5G3N2:reactivateMobileAccountResponse"/>
+      <WL5G3N0:fault message="WL5G3N2:reactivateMobileAccountFault" name="Fault"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="reactivateFixedAccountOrService">
+      <WL5G3N0:input message="WL5G3N2:reactivateFixedAccountOrServiceRequest"/>
+      <WL5G3N0:output message="WL5G3N2:reactivateFixedAccountOrServiceResponse"/>
+      <WL5G3N0:fault message="WL5G3N2:reactivateFixedAccountOrServiceFault" name="Fault"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="retrieveCustomerData">
+      <WL5G3N0:input message="WL5G3N2:retrieveCustomerDataRequest"/>
+      <WL5G3N0:output message="WL5G3N2:retrieveCustomerDataResponse"/>
+      <WL5G3N0:fault message="WL5G3N2:retrieveLegalizationDataFault" name="Fault"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="updateCustomerData">
+      <WL5G3N0:input message="WL5G3N2:updateCustomerDataRequest"/>
+      <WL5G3N0:output message="WL5G3N2:updateCustomerDataResponse"/>
+      <WL5G3N0:fault message="WL5G3N2:updateCustomerDataFault" name="Fault"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="legalizeAccount">
+      <WL5G3N0:input message="WL5G3N2:legalizeAccountRequest"/>
+      <WL5G3N0:output message="WL5G3N2:legalizeAccountResponse"/>
+      <WL5G3N0:fault message="WL5G3N2:legalizeAccountFault" name="Fault"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="retrieveLegalizationData">
+      <WL5G3N0:input message="WL5G3N2:retrieveLegalizationDataRequest"/>
+      <WL5G3N0:output message="WL5G3N2:retrieveLegalizationDataResponse"/>
+      <WL5G3N0:fault message="WL5G3N2:retrieveLegalizationDataFault" name="Fault"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="retrieveOTADevice">
+      <WL5G3N0:input message="WL5G3N2:retrieveOTADeviceRequest"/>
+      <WL5G3N0:output message="WL5G3N2:retrieveOTADeviceResponse"/>
+      <WL5G3N0:fault message="WL5G3N2:retrieveOTADeviceFault" name="Fault"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="retrieveAccountHistory">
+      <WL5G3N0:input message="WL5G3N2:retrieveAccountHistoryRequest"/>
+      <WL5G3N0:output message="WL5G3N2:retrieveAccountHistoryResponse"/>
+      <WL5G3N0:fault message="WL5G3N2:retrieveAccountHistoryFault" name="Fault"/>
+    </WL5G3N0:operation>
+  </WL5G3N0:portType>
+  <WL5G3N0:binding name="AccountManagementHttpBinding" type="WL5G3N2:AccountManagement">
+    <WL5G3N3:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <WL5G3N0:operation name="associateAccount">
+      <WL5G3N3:operation soapAction="http://www.americamovil.com/service/namespace/AccountManagement/v1/AssociateAccount"/>
+      <WL5G3N0:input>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="Fault">
+        <WL5G3N3:fault name="Fault" use="literal"/>
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="updateAccountAssociationStatus">
+      <WL5G3N3:operation soapAction="http://www.americamovil.com/service/namespace/AccountManagement/v1/UpdateAccountAssociationStatus"/>
+      <WL5G3N0:input>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="Fault">
+        <WL5G3N3:fault name="Fault" use="literal"/>
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="disassociateAccount">
+      <WL5G3N3:operation soapAction="http://www.americamovil.com/service/namespace/AccountManagement/v1/DisassociatecAccount"/>
+      <WL5G3N0:input>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="Fault">
+        <WL5G3N3:fault name="Fault" use="literal"/>
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="retrieveAccountDetails">
+      <WL5G3N3:operation soapAction="http://www.americamovil.com/service/namespace/AccountManagement/v1/RetrieveAccountDetails"/>
+      <WL5G3N0:input>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="Fault">
+        <WL5G3N3:fault name="Fault" use="literal"/>
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="retrieveAssociatedAccounts">
+      <WL5G3N3:operation soapAction="http://www.americamovil.com/service/namespace/AccountManagement/v1/RetrieveAssociatedAccounts"/>
+      <WL5G3N0:input>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="Fault">
+        <WL5G3N3:fault name="Fault" use="literal"/>
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="retrieveAccountList">
+      <WL5G3N3:operation soapAction="http://www.americamovil.com/service/namespace/AccountManagement/v1/RetrieveAccountList"/>
+      <WL5G3N0:input>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="Fault">
+        <WL5G3N3:fault name="Fault" use="literal"/>
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="validateAccountNumber">
+      <WL5G3N3:operation soapAction="http://www.americamovil.com/service/namespace/AccountManagement/v1/ValidateAccountNumber"/>
+      <WL5G3N0:input>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="Fault">
+        <WL5G3N3:fault name="Fault" use="literal"/>
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="validateMobileNumber">
+      <WL5G3N3:operation soapAction="http://www.americamovil.com/service/namespace/AccountManagement/v1/ValidateMobileNumber"/>
+      <WL5G3N0:input>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="Fault">
+        <WL5G3N3:fault name="Fault" use="literal"/>
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="validateNumber">
+      <WL5G3N3:operation soapAction="http://www.americamovil.com/service/namespace/AccountManagement/v1/ValidateNumber"/>
+      <WL5G3N0:input>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="Fault">
+        <WL5G3N3:fault name="Fault" use="literal"/>
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="retrieveBalances">
+      <WL5G3N3:operation soapAction="http://www.americamovil.com/service/namespace/AccountManagement/v1/RetrieveBalances"/>
+      <WL5G3N0:input>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="Fault">
+        <WL5G3N3:fault name="Fault" use="literal"/>
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="updateAccountStatus">
+      <WL5G3N3:operation soapAction="http://www.americamovil.com/service/namespace/AccountManagement/v1/UpdateAccountStatus"/>
+      <WL5G3N0:input>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="Fault">
+        <WL5G3N3:fault name="Fault" use="literal"/>
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="validateBillNumber">
+      <WL5G3N3:operation soapAction="http://www.americamovil.com/service/namespace/AccountManagement/v1/ValidateBillNumber"/>
+      <WL5G3N0:input>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="Fault">
+        <WL5G3N3:fault name="Fault" use="literal"/>
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="legalizeAccount">
+      <WL5G3N3:operation soapAction="http://www.americamovil.com/AccountManagement/V1/LegalizeAccount"/>
+      <WL5G3N0:input>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="Fault">
+        <WL5G3N3:fault name="Fault" use="literal"/>
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="reactivateFixedAccountOrService">
+      <WL5G3N3:operation soapAction="http://www.americamovil.com/AccountManagementService/V1/ReactivateFixedAccountOrService"/>
+      <WL5G3N0:input>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="Fault">
+        <WL5G3N3:fault name="Fault" use="literal"/>
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="retrieveCustomerData">
+      <WL5G3N3:operation soapAction="http://www.americamovil.com/AccountManagement/V1/RetrieveCustomerData"/>
+      <WL5G3N0:input>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="Fault">
+        <WL5G3N3:fault name="Fault" use="literal"/>
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="retrieveLegalizationData">
+      <WL5G3N3:operation soapAction="http://www.americamovil.com/AccountManagement/V1/RetrieveLegalizationData"/>
+      <WL5G3N0:input>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="Fault">
+        <WL5G3N3:fault name="Fault" use="literal"/>
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="updateCustomerData">
+      <WL5G3N3:operation soapAction="http://www.americamovil.com/AccountManagement/V1/UpdateCustomerData"/>
+      <WL5G3N0:input>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="Fault">
+        <WL5G3N3:fault name="Fault" use="literal"/>
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="validateFixedSuspension">
+      <WL5G3N3:operation soapAction="http://www.americamovil.com/AccountManagement/V1/ValidateFixedSuspension"/>
+      <WL5G3N0:input>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="Fault">
+        <WL5G3N3:fault name="Fault" use="literal"/>
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="suspendMobileAccount">
+      <WL5G3N3:operation soapAction="http://www.americamovil.com/AccountManagementService/V1/SuspendMobileAccount"/>
+      <WL5G3N0:input>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="Fault">
+        <WL5G3N3:fault name="Fault" use="literal"/>
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="suspendFixedAccountOrService">
+      <WL5G3N3:operation soapAction="http://www.americamovil.com/AccountManagementService/V1/SuspendFixedAccountOrService"/>
+      <WL5G3N0:input>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="Fault">
+        <WL5G3N3:fault name="Fault" use="literal"/>
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="reactivateMobileAccount">
+      <WL5G3N3:operation soapAction="http://www.americamovil.com/AccountManagementService/V1/ReactivateMobileAccount"/>
+      <WL5G3N0:input>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="Fault">
+        <WL5G3N3:fault name="Fault" use="literal"/>
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="retrieveOTADevice">
+      <WL5G3N3:operation soapAction="http://www.americamovil.com/AccountManagementService/V1/RetrieveOTADevice"/>
+      <WL5G3N0:input>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="Fault">
+        <WL5G3N3:fault name="Fault" use="literal"/>
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="retrieveAccountHistory">
+      <WL5G3N3:operation soapAction="http://www.americamovil.com/AccountManagementService/V1/RetrieveAccountHistory"/>
+      <WL5G3N0:input>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="Fault">
+        <WL5G3N3:fault name="Fault" use="literal"/>
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+  </WL5G3N0:binding>
+  <WL5G3N0:service name="AccountManagementHttpBindingQSService">
+    <WL5G3N0:documentation>OSB Service</WL5G3N0:documentation>
+    <WL5G3N0:port binding="WL5G3N2:AccountManagementHttpBinding" name="AccountManagementHttpBindingQSPort">
+      <WL5G3N3:address location="http://172.24.160.135:8080/SelfServiceMobile_Project/Services/Proxy_Pipelines/AccountManagement_PS"/>
+    </WL5G3N0:port>
+  </WL5G3N0:service>
+</WL5G3N0:definitions>
